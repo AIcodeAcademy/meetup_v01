@@ -1,78 +1,46 @@
 # Project Overview
 
-## Tech Stack
-
-### Core Technologies
-- TypeScript
-- Vite (Build tool)
-- Bun (Runtime & Package Manager)
-- PicoCSS (Styling)
-
-### Testing
-- Playwright (E2E Testing)
-
-## Dependencies
-
-```json
-{
-  "dependencies": {
-    "picoCss": "latest"
-  },
-  "devDependencies": {
-    "typescript": "^5.x",
-    "vite": "^5.x",
-    "playwright": "^1.x",
-    "@playwright/test": "^1.x"
-  }
-}
-```
-
-## Project Structure
-
-```
-.
-├── src/
-│   ├── components/
-│   │   └── CompoundInterestForm.ts
-│   ├── style.css
-│   └── index.ts
-├── tests/
-│   └── e2e/
-├── docs/
-│   ├── project-overview.md
-│   └── journal.md
-├── index.html
-└── package.json
-```
-
 ## Architecture
 
 ```mermaid
 graph TD
-    A[index.html] --> B[index.ts]
-    B --> C[CompoundInterestForm]
-    C --> D[DOM Events]
-    D --> E[Calculations]
-    E --> F[Display Results]
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style C fill:#bbf,stroke:#333,stroke-width:2px
+    A[CompoundInterestForm] --> B[ValueObjects]
+    A --> C[LocalStorage]
+    B --> D[Validation]
+    A --> E[Calculation]
+```
+
+## Dependencies
+
+### Production
+- No runtime dependencies
+
+### Development
+- TypeScript 5.0+
+- Vite 4.0+
+- Playwright 1.40+
+- PicoCSS 2.0+
+
+## Folder Structure
+
+```
+├── src/
+│   ├── components/
+│   │   └── CompoundInterestForm.ts
+│   ├── domain/
+│   │   └── valueObjects/
+│   ├── utils/
+│   │   └── calculation.ts
+│   └── main.ts
+├── tests/
+│   └── e2e/
+├── docs/
+└── public/
 ```
 
 ## Key Design Decisions
 
-1. **Component-Based Architecture**
-   - Modular components for better maintainability
-   - Each component handles its own state and events
-
-2. **Type Safety**
-   - Strict TypeScript configuration
-   - Value objects for data validation
-
-3. **Testing Strategy**
-   - E2E tests with Playwright
-   - Focus on user interaction flows
-
-4. **Styling Approach**
-   - PicoCSS for minimal, semantic styling
-   - CSS variables for theming
-   - Responsive design principles 
+1. No external dependencies to keep the bundle size minimal
+2. Value Objects for robust validation
+3. TypeScript for type safety
+4. PicoCSS for minimal styling with good defaults 

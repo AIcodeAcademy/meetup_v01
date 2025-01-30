@@ -17,14 +17,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated README with more detailed setup instructions
 - Enhanced code documentation for better maintainability
 
-## [1.0.0] - 2024-01-30
+## [1.0.0] - 2024-03-XX
 
 ### Added
 - Initial release
-- Compound interest calculator implementation
-- PicoCSS styling
+- Compound interest calculator form
+- Value object validation
+- Local storage persistence
+- Light/dark mode support
 - E2E tests with Playwright
-- Basic documentation
 
 ## [1.0.1] - 2024-01-30
 

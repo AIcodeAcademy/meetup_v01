@@ -1,21 +1,56 @@
-# Bun Vite Blueprint
+# Compound Interest Calculator
 
-This is a simple Bun Vite Blueprint for a vanilla TS project.
+A simple web application to calculate compound interest without external dependencies.
 
-It also includes PicoCSS for styling and Playwright for testing.
+## Features
 
-It also could be used with node.js
+- Calculate compound interest with customizable parameters
+- Real-time validation and calculation
+- Responsive design with light/dark mode support
+- No external runtime dependencies
 
 ## Getting Started
 
+### Prerequisites
+
+- Node.js 18+
+- npm 9+
+
+### Installation
+
 ```bash
-git clone https://github.com/AIcodeAcademy/BunViteBlueprint.git your-project-name
-cd your-project-name
-bun i
-bun dev
-bun e2e
+npm install
 ```
----
+
+### Development
+
+```bash
+npm run dev
+```
+
+### Testing
+
+```bash
+npm run test
+```
+
+### Build
+
+```bash
+npm run build
+```
+
+## Tech Stack
+
+- TypeScript
+- HTML5 
+- CSS3 (PicoCSS)
+- Playwright (e2e testing)
+- Vite (build tool)
+
+## License
+
+MIT
 
 <footer>
   <h3>🧑🏼‍💻 By <a href="https://albertobasalo.dev" target="blank">Alberto Basalo</a> </h3>

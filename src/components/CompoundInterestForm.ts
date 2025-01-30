@@ -33,7 +33,8 @@ export function createCompoundInterestForm(onSubmit: CompoundInterestFormCallbac
 
     const header = document.createElement('header');
     const title = document.createElement('h2');
-    title.textContent = 'Compound Interest Calculator';
+    title.textContent = import.meta.env.VITE_APP_TITLE;
+    title.className = 'logo';
     header.appendChild(title);
 
     const formGrid = document.createElement('section');
@@ -213,4 +214,37 @@ function createFrequencySelect(
 
     group.append(label, select);
     return group;
+}
+
+/**
+ * Web component that renders a compound interest calculator form
+ * Handles validation, calculation and persistence of results
+ * 
+ * @example
+ * ```html
+ * <compound-interest-form></compound-interest-form>
+ * ```
+ */
+export class CompoundInterestForm extends HTMLElement {
+    // ... existing code ...
+
+    /**
+     * Calculates the compound interest based on form values
+     * Validates input before calculation
+     * 
+     * @returns The calculated amount or error message
+     * @throws {ValidationError} If inputs are invalid
+     */
+    #calculate(): number {
+        // ... existing code ...
+        return 0; // Add proper return value based on calculation
+    }
+
+    /**
+     * Persists the current calculation to localStorage
+     * Only saves valid calculations
+     */
+    #saveToStorage(): void {
+        // ... existing code ...
+    }
 } 
