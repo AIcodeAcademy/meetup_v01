@@ -1,0 +1,36 @@
+{
+  "name": "compound-interest-calculator",
+  "description": "Blueprint Bun Vite and PicoCSS",
+  "author": {
+    "name": "Alberto Basalo",
+    "url": "https://albertobasalo.dev"
+  },
+  "repo": {
+    "url": "https://github.com/AIcodeAcademy/BunViteBlueprint"
+  },
+  "private": true,
+  "version": "1.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "e2e": "playwright test",
+    "lint": "biome lint --write .",
+    "format": "biome format --write .",
+    "preview": "vite build && vite preview"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@playwright/test": "^1.50.0",
+    "@types/bun": "latest",
+    "@types/node": "^22.10.10",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "@fontsource/fira-mono": "^5.1.1",
+    "@fontsource/major-mono-display": "^5.1.1",
+    "@fontsource/tomorrow": "^5.1.1",
+    "@picocss/pico": "^2.0.6"
+  },
+  "module": "index.ts"
+}

@@ -1,0 +1,97 @@
+@import "@picocss/pico";
+@import "@fontsource/tomorrow";
+@import "@fontsource/major-mono-display";
+@import "@fontsource/fira-mono";
+
+:root {
+	--pico-font-family: "Fira Mono", Consolas, monospace;
+	--pico-font-family-emoji: "Major Mono Display", Consolas, monospace;
+	--pico-font-family-sans-serif: Tomorrow, Roboto, Helvetica, Arial, sans-serif;
+	--pico-font-family-monospace: "Fira Mono", Consolas, monospace;
+	--pico-border-radius: 0rem;
+	--ab-lime: #00FF00;
+	--ab-cyan: #00FFFF;
+	--ab-blue: #00BFFF;
+  --ab-green: #32CD32;
+	--ab-dark-blue: #000080;
+	--ab-dark-green: #006400;
+	--ab-white: #fff;
+	--spacing-unit: 1rem;
+}
+
+[data-theme=light],
+:root:not([data-theme=dark]) {
+	--pico-primary: var(--ab-green);
+  --pico-primary-underline: var(--ab-green);
+  --pico-primary-hover: var(--ab-blue);
+  --pico-primary-background: var(--ab-lime);
+  --pico-primary-hover-background: var(--ab-cyan);
+  --pico-secondary: var(--ab-blue);
+
+}
+[data-theme=dark]{
+  --pico-primary: var(--ab-lime);
+  --pico-primary-underline: var(--ab-lime);
+  --pico-primary-hover: var(--ab-cyan);
+  --pico-primary-background: var(--ab-green);
+  --pico-primary-hover-background: var(--ab-blue);
+  --pico-secondary: var(--ab-cyan);
+}
+
+body {
+	font-family: var(--pico-font-family-monospace);
+	padding: 2%;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--pico-font-family-sans-serif);
+}
+
+.logo {
+	font-family: var(--pico-font-family-emoji);
+}
+
+/* Custom layout styles */
+.form-grid {
+    display: grid;
+    gap: var(--spacing-unit);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: var(--spacing-unit) 0;
+}
+
+/* Table customizations */
+.table-responsive {
+    overflow-x: auto;
+}
+
+td {
+    text-align: right;
+}
+
+td:first-child,
+th[scope="row"] {
+    text-align: left;
+}
+
+tfoot {
+    font-weight: 500;
+}
+
+/* Form customizations */
+small {
+    opacity: 0.8;
+}
+
+/* Responsive container */
+.compound-interest-form,
+.growth-table-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-unit);
+}

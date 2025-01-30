@@ -1,0 +1,58 @@
+# TypeScript
+
+- Prefer `type` over `interface`
+- Prefer functions over static methods
+- Prefer `#` over `_` for private properties
+- Avoid `null` and `undefined`
+- Prefer named functions over complex anonymous functions
+- Avoid deep nested flow structures by using early returns
+- Validate data using plain TS functions or ValueObjects if needed (no external libraries)
+
+
+
+# HTML
+
+- Use standard HTML semantic tags
+- Avoid divs or paragraphs for layout
+- Add ARIA attributes for accessibility 
+
+
+# CSS
+
+- Prefer style standard HTML over custom classes
+- Use a basic reset such PicoCSS
+- Use variables for colors, fonts, and spacing
+- Use flex/grid layout for layout
+- Ensure responsive design (typography, layout, spacing, etc.)
+- Nice to have light/dark mode
+
+# Web APIs
+
+- Use fetch API for HTTP requests
+- Use localStorage for data storage
+- Avoid external libraries as much as possible
+
+# Testing
+
+- Use Playwright for e2e testing
+- Use AAA pattern for organizing test code.
+- Name variables following: `inputX`, `mockX`, `expectedX`, `actualX`.
+- Use GWT for describing the tests.
+
+
+# Git
+
+- Use conventional commits
+- Update a CHANGELOG.md file on each commit
+- Update version in package.json on each release
+- Use a CHANGELOG.md file to track changes
+- Use a CHANGELOG.md file to track changes
+
+
+# Documentation
+
+- Add a README.md file to the project with the tech stack, and how to run/test the project.
+- Add a OVERVIEW.md file to the docs directory with the tech stack, folder structure, and high-level architecture diagram.
+- Add a JOURNAL.md file to the docs directory with the session chat key actions and decisions.
+- Add JSDoc comments to public or exported functions.
+- Add comments to complex code that explain the why behind the code.
