@@ -45,4 +45,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Implemented using vanilla TypeScript and DOM manipulation
 - No external dependencies for core functionality
 - Responsive design using CSS Grid and Flexbox
-- Type-safe implementation with strict TypeScript checks 
+- Type-safe implementation with strict TypeScript checks
+
+## [0.1.0] - 2024-03-21
+
+### Added
+- Initial project setup with coding standards and guidelines
+- TypeScript coding standards (types, functions, properties)
+- HTML and CSS best practices
+- Testing conventions using Playwright
+- Documentation requirements
+- Git workflow guidelines 

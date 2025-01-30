@@ -45,9 +45,7 @@
 - Use conventional commits
 - Update a CHANGELOG.md file on each commit
 - Update version in package.json on each release
-- Use a CHANGELOG.md file to track changes
-- Use a CHANGELOG.md file to track changes
-
+- Use a CHANGELOG.md file to track changes 
 
 # Documentation
 
